@@ -1,3 +1,8 @@
 - name: google-cloud-deployment
-  service: googleclouddeployment
-  command: ./google-deploy.sh
+  steps:
+    - service: check_dir
+      command: ls
+    - service: in_deploy
+      command: cd deploy/
+    - service: check_dir_2
+      command: ./google-deploy.sh
