@@ -1,10 +1,8 @@
-- type: serial
+- type: parallel
   name: google-cloud-deployment
-  service:
-  - check
-  - travel
-  - checkagain
+  services:
+  - foo
+  - bar
   steps:
-  - command: ls
-  - command: cd deploy/
-  - command: ./google-deploy.sh
+  - command: echo one
+  - command: echo two
