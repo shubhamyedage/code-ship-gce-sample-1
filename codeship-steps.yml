@@ -1,8 +1,6 @@
 - type: parallel
   name: google-cloud-deployment
   services:
-  - foo
   - bar
   steps:
-  - command: echo one
-  - command: echo two
+  - command: ls
