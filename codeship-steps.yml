@@ -1,9 +1,10 @@
 - type: serial
   name: google-cloud-deployment
+  service:
+  - check
+  - travel
+  - checkagain
   steps:
-    - service: check_dir
-      command: ls
-    - service: in_deploy
-      command: cd deploy/
-    - service: check_dir_2
-      command: ./google-deploy.sh
+  - command: ls
+  - command: cd deploy/
+  - command: ./google-deploy.sh
