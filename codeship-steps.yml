@@ -1,3 +1,3 @@
 - name: google-cloud-deployment
   service: googleclouddeployment
-  command: sh deploy/google-deploy.sh
+  command: deploy/google-deploy.sh
