@@ -1,4 +1,5 @@
-- name: google-cloud-deployment
+- type: serial
+  name: google-cloud-deployment
   steps:
     - service: check_dir
       command: ls
