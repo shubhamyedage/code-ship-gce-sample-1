@@ -1,13 +1,11 @@
 #!/bin/bash
 set -e
 
-date=$(date "+%Y%m%d%H%M")
-cluster_name="codeship-gcloud-test-${date}"
-echo "Authenticating"
-ls
-
 # Authenticate with the Google Services
-#codeship_google authenticate
+date=$(date "+%Y%m%d%H%M")
+echo "${date}Authenticating"
+codeship_google authenticate
+ls
 
 # switch to the directory containing your app.yml (or similar) configuration file
 # note that your repository is mounted as a volume to the /deploy directory
