@@ -13,9 +13,8 @@ ls
 python --version
 
 apt-get -y update
-apt-get install python-pip python-dev build-essential
+apt-get -y install python-pip python-dev build-essential
 pip install --upgrade pip
-
 pip install --upgrade pip
 pip install -r requirements.txt
 
