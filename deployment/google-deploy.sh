@@ -1,6 +1,10 @@
+#!/bin/bash
 set -e
 
+date=$(date "+%Y%m%d%H%M")
+cluster_name="codeship-gcloud-test-${date}"
 echo "Authenticating"
+ls
 
 # Authenticate with the Google Services
 #codeship_google authenticate
