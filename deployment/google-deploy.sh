@@ -12,6 +12,7 @@ cd /deploy/main
 ls
 python --version
 
+apt-get update
 apt-get install python-pip python-dev build-essential
 pip install --upgrade pip
 
