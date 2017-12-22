@@ -1,7 +1,3 @@
 - name: google-cloud-deployment
-  services:
-  - googleclouddeployment
-  - googleclouddeployment
-  steps:
-    - command: ls -a /deploy/google-deploy.sh
-    - command: echo Hello
+  service: googleclouddeployment
+  command: /deploy/google-deploy.sh
