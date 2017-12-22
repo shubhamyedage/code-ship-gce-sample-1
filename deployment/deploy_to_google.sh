@@ -3,7 +3,7 @@ ls
 pwd
 
 # Authenticate with the Google Services
-# codeship_google authenticate
+codeship_google authenticate
 
 # switch to the directory containing your app.yml (or similar) configuration file
 # note that your repository is mounted as a volume to the /deploy directory
