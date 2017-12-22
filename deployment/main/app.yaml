@@ -6,4 +6,4 @@ runtime_config:
   python_version: 2
 
 env_variables:
-    CLOUD_STORAGE_BUCKET: your-bucket-name
+    CLOUD_STORAGE_BUCKET: text-summary-python27.appspot.com
