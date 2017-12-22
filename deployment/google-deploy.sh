@@ -16,6 +16,6 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # deploy the application
-pwd
 echo "Deploying"
-gcloud app deploy --project text-summary-python27 --quiet
+gcloud config set project text-summary-python27
+gcloud app deploy --quiet
