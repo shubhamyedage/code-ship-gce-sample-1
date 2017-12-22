@@ -3,4 +3,4 @@ googleclouddeployment:
   encrypted_env_file: google-credentials.encrypted
   add_docker: true
   volumes:
-    - ./deployment/:/deploy
+    - ./:/deploy
