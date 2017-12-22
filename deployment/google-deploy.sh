@@ -14,10 +14,11 @@ cd /deploy/main
 #pip install --upgrade pip
 #pip install --upgrade pip
 #pip install -r requirements.txt
-
-
+echo $GOOGLE_AUTH_EMAIL
+echo $GOOGLE_AUTH_JSON
 echo "${GOOGLE_AUTH_JSON}" > /keyconfig.json
 gcloud auth activate-service-account "${GOOGLE_AUTH_EMAIL}" --key-file /keyconfig.json --project "${GOOGLE_PROJECT_ID}"
+gcloud auth list
 # deploy the application
 #echo "Setting project"
 #gcloud config set project text-summary-python27
