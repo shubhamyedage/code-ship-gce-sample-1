@@ -1,9 +1,3 @@
 - name: google-cloud-deployment
-  type: serial
-    steps:
-      - service: googleclouddeployment
-        command: ls -a /deploy/google-deploy.sh
-      - service: googleclouddeployment
-        command: chmod u+x /deploy/google-deploy.sh
-      - service: googleclouddeployment
-        command: /deploy/google-deploy.sh
+  service: googleclouddeployment
+  command: ls -a /deploy/google-deploy.sh
