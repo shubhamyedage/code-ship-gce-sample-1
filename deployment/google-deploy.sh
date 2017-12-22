@@ -18,10 +18,9 @@ cd /deploy/main
 
 echo "${GOOGLE_AUTH_JSON}" > /keyconfig.json
 gcloud auth activate-service-account "${GOOGLE_AUTH_EMAIL}" --key-file /keyconfig.json --project "${GOOGLE_PROJECT_ID}"
-
 # deploy the application
-echo "Setting project"
-gcloud config set project text-summary-python27
+#echo "Setting project"
+#gcloud config set project text-summary-python27
 echo "Deploying"
 gcloud app deploy --bucket=gs://text-summary-python27.appspot.com --quiet
 #gcloud app deploy --bucket=gs://text-summary-python27.appspot.com --log-http --verbosity=debug --quiet
