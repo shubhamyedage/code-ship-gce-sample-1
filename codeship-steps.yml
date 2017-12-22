@@ -1,4 +1,3 @@
-- name: Deployment
-  type: parallel
-  service: deployment
+- name: google-cloud-deployment
+  service: googleclouddeployment
   command: /deploy/google-deploy.sh
