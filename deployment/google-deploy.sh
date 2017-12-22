@@ -16,8 +16,8 @@ cd /deploy/main
 #pip install -r requirements.txt
 
 # deploy the application
-#echo "Setting project"
-#gcloud config set project text-summary-python27
-gcloud auth list
-#echo "Deploying"
+echo "Setting project"
+gcloud config set project text-summary-python27
+echo "Deploying"
+gcloud app deploy --bucket=gs://text-summary-python27.appspot.com
 #gcloud app deploy --bucket=gs://text-summary-python27.appspot.com --log-http --verbosity=debug --quiet
