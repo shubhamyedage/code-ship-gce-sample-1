@@ -2,8 +2,7 @@
 set -e
 
 # Authenticate with the Google Services
-date=$(date "+%Y%m%d%H%M")
-echo "${date}Authenticating"
+echo "Authenticating"
 codeship_google authenticate
 
 # switch to the directory containing your app.yml (or similar) configuration file
@@ -17,4 +16,6 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # deploy the application
-gcloud app deploy --quiet
+pwd
+echo "Deploying"
+gcloud app deploy --project text-summary-python27 --quiet
