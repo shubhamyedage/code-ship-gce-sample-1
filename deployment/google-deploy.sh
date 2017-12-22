@@ -1,3 +1,5 @@
+set -e
+
 echo "Authenticating"
 
 # Authenticate with the Google Services
