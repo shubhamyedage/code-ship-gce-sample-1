@@ -18,6 +18,6 @@ cd /deploy/main
 # deploy the application
 echo "Setting project"
 gcloud config set project text-summary-python27
-gsutil cp requirements.txt gs://text-summary-python27.appspot.com
+gcloud auth list
 echo "Deploying"
 gcloud app deploy --bucket=gs://text-summary-python27.appspot.com --log-http --verbosity=debug --quiet
