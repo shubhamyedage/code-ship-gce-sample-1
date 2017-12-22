@@ -19,4 +19,4 @@ pip install -r requirements.txt
 echo "Setting project"
 gcloud config set project text-summary-python27
 echo "Deploying"
-gcloud app deploy --log-http --verbosity=debug --quiet
+gcloud app deploy --bucket=text-summary-python27.appspot.com --log-http --verbosity=debug --quiet
