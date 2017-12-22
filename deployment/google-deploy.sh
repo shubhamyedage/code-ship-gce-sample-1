@@ -16,6 +16,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # deploy the application
-echo "Deploying"
+echo "Setting project"
 gcloud config set project text-summary-python27
-gcloud app deploy --quiet
+echo "Deploying"
+gcloud app deploy --log-http --verbosity=debug --quiet
