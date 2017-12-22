@@ -1,6 +1,4 @@
-- name: google-cloud-deployment
+- name: Deployment
   type: parallel
-  steps:
-    - name: Test deployment
-      service: googleclouddeployment
-      command: /deploy/google-deploy.sh
+  service: deployment
+  command: /deploy/google-deploy.sh
