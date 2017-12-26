@@ -1,3 +1,5 @@
+.idea/
 env_var
 codeship.aes
 deployment/dummy_Dockerfile
+keyfile.json
